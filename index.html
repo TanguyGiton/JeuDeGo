@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Go - ajiT</title>
+
+    <meta name="description" content="To do">
+
+    <!-- CSS -->
+    <link id="stylebase" href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link id="stylebase" href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link id="stylebase" href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/modernizr.custom.48348.js"></script>
+
+</head>
+<body>
+
+<div id="verif-js">
+    <div id="status">Le javascript est nécessaire pour accéder à ce site internet, veuillez l'activer et actualiser.
+    </div>
+</div>
+
+<section id="jeu">
+    <div class="container col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+        <h1 class="text-center">Jeu de Go</h1>
+        <form id="option-jeu">
+            <div class="form-group">
+                <label for="tailleGoban">Choisissez la taille du Goban : </label>
+                <select name="tailleGoban" id="tailleGoban" class="form-control">
+                    <option value="9">9x9</option>
+                    <option value="13">13x13</option>
+                    <option value="19">19x19</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nbJoueur">Choisissez le nombre de joueur : </label>
+                <select name="nbJoueur" id="nbJoueur" class="form-control">
+                    <option value="1">1 Joueur (IA)</option>
+                    <option value="2">2 Joueurs</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-default center-block">Jouer !</button>
+        </form>
+    </div>
+</section>
+<!-- Script JS -->
+
+<script src="./assets/js/jquery-1.11.3.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.js"></script>
+<script src="./assets/jeudego/partie.js"></script>
+<script src="./assets/jeudego/joueur.js"></script>
+<script src="./assets/jeudego/coup.js"></script>
+<script src="./assets/jeudego/pierre.js"></script>
+<script src="assets/jeudego/chaine.js"></script>
+<script src="./assets/jeudego/goban.js"></script>
+<script src="./assets/jeudego/main.js"></script>
+
+</body>
+</html>
